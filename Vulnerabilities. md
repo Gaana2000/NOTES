@@ -1,0 +1,100 @@
+# VULNERABILITIES 
+
+**Weakness in an information system, system security procedures, internal controls, or implementation that could be exploited or triggered by a threat source.**
+
+# HTML FORM VULNERABILITIES 
+
+**HTML Injection** is a web security vulnerability that allows an attacker to inject malicious HTML content into a webpage. This vulnerability arises when an application does not properly validate user-supplied input before passing it to a web browser.
+
+
+# What are the most common security vulnerabilities in HTML forms?
+
+1. **Reputation Damage**
+
+Attackers might change the appearance of a webpage by injecting code and defacing it with inappropriate content.
+
+2. **Cross-Site Scripting (XSS)**
+
+XSS is a type of attack that injects malicious code into a web page, usually through a form field or a URL parameter. The code can then execute in the browser of the victim and steal their cookies, session tokens, or other sensitive information. To prevent XSS, you should always validate and sanitize user input, escape any output that contains user input, and use Content Security Policy (CSP) headers to restrict the sources of scripts and other resources.Cross-site scripting (XSS) is a common security vulnerability in HTML, where malicious scripts are injected into trusted websites. 
+HTML Injection can lead to XSS if the injected HTML contains scripts. This can be used to steal sensitive information, such as session cookies.
+
+3. **Cross-site request forgery (CSRF)**
+
+CSRF is a type of attack that tricks a user into performing an unwanted action on a web application, such as transferring money, changing their password, or deleting their account. The attacker exploits the fact that the browser automatically sends the user's cookies or other authentication tokens with every request to the same origin. To prevent CSRF, you should use a unique and unpredictable token for each form submission, verify the origin and refer headers of the request, and use the Same Site attribute for cookies.
+
+4. **SQL injection (SQLi)**
+
+SQLi is a type of attack that manipulates a database query by inserting malicious code into a form field or a URL parameter. The code can then execute on the server and compromise the database, such as retrieving, modifying, or deleting data, or executing commands. To prevent SQLi, you should never concatenate user input with SQL statements, use prepared statements or parameterized queries, and limit the permissions and privileges of the database user.
+
+To secure HTML forms from common vulnerabilities like SQL Injection (SQLi), follow these practices:
+
+1. **Avoid concatenating user Input in SQL**: Directly adding user input to SQL statements can lead to SQLi.
+
+2. **Use prepared statements**: They safely handle user input in SQL queries.
+
+3. **Limit database permissions**: Restrict your application's database user to only necessary permissions.
+
+4. **Validate and sanitize data**: Always check and clean data received via POST or GET methods.
+
+
+5. **Session Hijacking**
+
+If session cookies are compromised through HTML injection, attackers can hijack user sessions. This allows them to impersonate legitimate users, gaining unauthorized access to accounts and sensitive information.
+
+# **How to test HTML injection**
+
+To use a website called Vulnerable Web Application (bWAPP) for testing purposes. 
+
+
+**Access bWAPP**: “First of all, install the OWASP Broken Web Applications Project in VMware Workstation. After installation, open it by accessing the IP address in the Mozilla Firefox browser.
+
+**Choose Bug**: After accessing bWAPP, select the “Choose your bug” option and pick “HTML Injection Reflected (GET).” Subsequently, click the “Hack” button to initiate the testing process. First, you will test low level and then we will increase the levels of security.
+
+# Types of HTML Injection Attacks
+
+1. **Stored HTML Injection**
+ 
+
+2. **Reflected HTML Injection**
+
+
+3. **DOM-based HTML Injection**
+
+
+# Mitigation of HTML injection
+
+▪ The developers can verify the user input by evaluating its length, type, and format.
+
+▪ Any user input that the application will output should be encoded by the developers. 
+
+▪ Security testing must be performed on the web applications.
+
+▪ There are numerous functions available to determine whether the code has any unique brackets. The checking function you choose will depend on the programming language you're using.
+
+▪ The programmer needs to configure his HTML script such that it removes metacharacters from user inputs.
+
+▪ To prevent this attack the developer must validate the appropriate data.
+
+
+
+# VULNERABILITY CHECKING
+
+Vulnerability Scanning is the process of identifying security weaknesses and flaws in systems and software running on them. It's part of a vulnerability management program that protects organizations from data breaches. 
+IT departments or third-party security service providers scan for vulnerabilities using vulnerability scanning tools. Doing so helps predict how effective counter measures are in case of a threat or attack.
+
+There are two big challenges related to traditional vulnerability assessment – **knowing what to scan and knowing when to scan**.
+
+● Keeping an up-to-date asset inventory is an essential first step and requires its own set of tools and strategies.
+
+● Making sure that your vulnerability scanning tools cover non-traditional assets such as BYOD devices, IoTs, mobile assets, and cloud services is essential.
+
+● In a world where cyber threats can come from any direction and at any time, the ability to configure and perform continuous monitoring and scanning (as opposed to monthly or quarterly vulnerability scans) is key.
+
+**Vulnerability Scanning Tools**
+
+● API sec
+● AppScanner
+● GraphQl Security
+● WpScan 
+
+..................................................................................................
